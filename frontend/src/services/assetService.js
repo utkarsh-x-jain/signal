@@ -1,4 +1,5 @@
-const API_BASE_URL = "http://127.0.0.1:8000/api";
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000/api";
 
 export async function getAssets() {
   const response = await fetch(`${API_BASE_URL}/assets/`);
@@ -11,9 +12,7 @@ export async function getAssets() {
 }
 
 export async function getAsset(assetId) {
-  const response = await fetch(
-    `${API_BASE_URL}/assets/${assetId}`
-  );
+  const response = await fetch(`${API_BASE_URL}/assets/${assetId}`);
 
   if (!response.ok) {
     throw new Error("Failed to fetch asset");
@@ -23,16 +22,13 @@ export async function getAsset(assetId) {
 }
 
 export async function createInspectionTask(taskData) {
-  const response = await fetch(
-    `${API_BASE_URL}/inspection-tasks/`,
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(taskData),
-    }
-  );
+  const response = await fetch(`${API_BASE_URL}/inspection-tasks/`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(taskData),
+  });
 
   if (!response.ok) {
     throw new Error("Failed to create inspection task");
@@ -42,9 +38,7 @@ export async function createInspectionTask(taskData) {
 }
 
 export async function getInspectionTasks() {
-  const response = await fetch(
-    `${API_BASE_URL}/inspection-tasks/`
-  );
+  const response = await fetch(`${API_BASE_URL}/inspection-tasks/`);
 
   if (!response.ok) {
     throw new Error("Failed to fetch inspection tasks");
@@ -53,10 +47,7 @@ export async function getInspectionTasks() {
   return response.json();
 }
 
-export async function updateInspectionTaskStatus(
-  taskId,
-  status
-) {
+export async function updateInspectionTaskStatus(taskId, status) {
   const response = await fetch(
     `${API_BASE_URL}/inspection-tasks/${taskId}`,
     {
@@ -64,16 +55,12 @@ export async function updateInspectionTaskStatus(
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        status,
-      }),
+      body: JSON.stringify({ status }),
     }
   );
 
   if (!response.ok) {
-    throw new Error(
-      "Failed to update inspection task status"
-    );
+    throw new Error("Failed to update inspection task status");
   }
 
   return response.json();
