@@ -1162,3 +1162,37 @@ If you find the project interesting, consider giving the repository a ⭐ on Git
 # 📜 License
 
 This project is intended for educational, portfolio, prototype, and hackathon development purposes.
+
+---
+
+# 🖼️ Screenshots
+
+### 🏠 Landing Page
+
+![Signal Landing Page](screenshots/home.png)
+
+### 📊 Infrastructure Command Center
+
+![Signal Dashboard](screenshots/dashboard.png)
+
+### 🧠 Asset Intelligence
+
+![Signal Asset Details](screenshots/asset-details.png)
+
+---
+
+# 🎥 Product Flow
+
+```text
+🏠 Landing Page
+      ↓
+📊 Command Center
+      ↓
+🏗️ Select Infrastructure Asset
+      ↓
+🧠 Risk Intelligence
+      ↓
+🚨 Alerts & Recommendations
+      ↓
+📝 Inspection Action
+```
