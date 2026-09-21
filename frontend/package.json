@@ -1,0 +1,26 @@
+{
+  "name": "signal-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "framer-motion": "^13.2.0",
+    "lucide-react": "^1.45.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.18.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.2",
+    "eslint": "^9.35.0",
+    "vite": "^7.1.5"
+  }
+}

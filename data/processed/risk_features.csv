@@ -1,0 +1,5 @@
+asset_id,complaint_count,average_complaint_severity,recent_complaints,inspection_count,average_condition_score,maintenance_count,recent_maintenance,total_maintenance_cost,incident_count,unresolved_incidents,resolved_incidents,rule_based_risk
+SG-042,3,3.67,3,1,58.0,2,1,277000,1,1,0,59.2
+SG-017,1,3.0,1,1,72.0,1,1,45000,1,0,1,34.0
+SG-091,0,0.0,0,0,50.0,0,0,0,0,0,0,10.0
+SG-063,0,0.0,0,1,67.0,1,0,68000,1,0,1,16.6

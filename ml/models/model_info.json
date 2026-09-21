@@ -1,0 +1,33 @@
+{
+  "model_name": "Gradient Boosting",
+  "model_file": "/Users/utkarshjain/signal/ml/models/risk_model.joblib",
+  "features": [
+    "complaint_count",
+    "average_complaint_severity",
+    "recent_complaints",
+    "inspection_count",
+    "average_condition_score",
+    "maintenance_count",
+    "recent_maintenance",
+    "total_maintenance_cost",
+    "incident_count",
+    "unresolved_incidents",
+    "resolved_incidents"
+  ],
+  "target": "rule_based_risk",
+  "results": {
+    "Linear Regression": {
+      "mae": 2.5267,
+      "r2": 0.967
+    },
+    "Random Forest": {
+      "mae": 3.0776,
+      "r2": 0.9501
+    },
+    "Gradient Boosting": {
+      "mae": 2.083,
+      "r2": 0.9778
+    }
+  },
+  "dataset_rows": 600
+}
